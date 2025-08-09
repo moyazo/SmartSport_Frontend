@@ -1,9 +1,10 @@
 import { ClientProviders } from './components/ClientProviders';
-import { News_Cycle } from 'next/font/google';
-import {metadata} from './metadata';
+import { metadata } from './metadata';
+import React from 'react';
 export { metadata };
+import { News_Cycle } from 'next/font/google';
 
-const newsCycle = News_Cycle({
+export const newsCycle = News_Cycle({
     variable: '--font-news-cycle',
     weight: ['400', '700'],
     subsets: ['latin'],
