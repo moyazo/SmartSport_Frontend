@@ -1,6 +1,5 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
-import './theme.d.ts';
 // src/theme.ts
 export const theme = createTheme({
     palette: {
@@ -42,38 +41,37 @@ export const theme = createTheme({
     },
     typography: {
         xs: {
-        fontSize: '0.75rem',
-        lineHeight: '1rem',
+            fontSize: '0.75rem',
+            lineHeight: '1rem',
         },
         sm: {
-        fontSize: '0.875rem',
-        lineHeight: '1.25rem',
+            fontSize: '0.875rem',
+            lineHeight: '1.25rem',
         },
         lg: {
-        fontSize: '1.125rem',
-        lineHeight: '1.75rem',
+            fontSize: '1.125rem',
+            lineHeight: '1.75rem',
         },
         xl: {
-        fontSize: '1.25rem',
-        lineHeight: '1.75rem',
+            fontSize: '1.25rem',
+            lineHeight: '1.75rem',
         },
         '2xl': {
-        fontSize: '1.5rem',
-        lineHeight: '2rem',
+            fontSize: '1.5rem',
+            lineHeight: '2rem',
         },
         '3xl': {
-        fontSize: '1.875rem',
-        lineHeight: '2.25rem',
+            fontSize: '1.875rem',
+            lineHeight: '2.25rem',
         },
         '4xl': {
-        fontSize: '2.25rem',
-        lineHeight: '2.5rem',
+            fontSize: '2.25rem',
+            lineHeight: '2.5rem',
         },
         '5xl': {
-        fontSize: '3rem',
-        lineHeight: '1',
+            fontSize: '3rem',
+            lineHeight: '1',
         },
-        
     },
     customFontWeight: {
         thin: 100,
@@ -85,5 +83,5 @@ export const theme = createTheme({
         bold: 700,
         extrabold: 800,
         black: 900,
-    }
+    },
 });
