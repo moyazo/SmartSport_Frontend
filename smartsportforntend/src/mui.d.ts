@@ -45,33 +45,31 @@ declare module '@mui/material/styles' {
     }
 }
 
-
 declare module '@mui/material/styles' {
-  interface Theme {
-    customFontWeight: {
-      thin: number;
-      extralight: number;
-      light: number;
-      normal: number;
-      medium: number;
-      semibold: number;
-      bold: number;
-      extrabold: number;
-      black: number;
-    };
-  }
-  interface ThemeOptions {
-    customFontWeight?: {
-      thin?: number;
-      extralight?: number;
-      light?: number;
-      normal?: number;
-      medium?: number;
-      semibold?: number;
-      bold?: number;
-      extrabold?: number;
-      black?: number;
-    };
-  }
+    interface Theme {
+        customFontWeight: {
+            thin: number;
+            extralight: number;
+            light: number;
+            normal: number;
+            medium: number;
+            semibold: number;
+            bold: number;
+            extrabold: number;
+            black: number;
+        };
+    }
+    interface ThemeOptions {
+        customFontWeight?: {
+            thin?: number;
+            extralight?: number;
+            light?: number;
+            normal?: number;
+            medium?: number;
+            semibold?: number;
+            bold?: number;
+            extrabold?: number;
+            black?: number;
+        };
+    }
 }
-
