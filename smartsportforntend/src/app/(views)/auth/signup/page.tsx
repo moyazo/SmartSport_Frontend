@@ -5,6 +5,7 @@ import {
     validationSchema,
 } from '../../../../../common/constants';
 import { signup } from 'app/services/api/auth';
+import AppForm from 'app/components/AppForm/appform';
 
 const SignUp = () => (
     <div>
@@ -48,27 +49,7 @@ const SignUp = () => (
                 isSubmitting,
                 /* and other goodies */
             }) => (
-                <form onSubmit={handleSubmit}>
-                    <input
-                        type="email"
-                        name="email"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        value={values.email}
-                    />
-                    {errors.email && touched.email && errors.email}
-                    <input
-                        type="password"
-                        name="password"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        value={values.password}
-                    />
-                    {errors.password && touched.password && errors.password}
-                    <button type="submit" disabled={isSubmitting}>
-                        Submit
-                    </button>
-                </form>
+                <AppForm touched={touched} handleSubmit={handleSubmit} handleChange={handleChange} handleBlur={handleBlur} values={values} isSubmitting={isSubmitting} errors={errors} />
             )}
         </Formik>
     </div>
