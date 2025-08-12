@@ -9,9 +9,9 @@ export const theme = createTheme({
             dark: '#F02424',
         },
         primary: {
-            main: '#2B2D42',
-            light: '#72E9C9',
-            dark: '#0E0F16',
+            main: '#03071E',
+            light: '#8D99AE',
+            dark: '#010416',
         },
         secondary: {
             main: '#8D99AE',
@@ -40,38 +40,14 @@ export const theme = createTheme({
         },
     },
     typography: {
-        xs: {
-            fontSize: '0.75rem',
-            lineHeight: '1rem',
-        },
-        sm: {
-            fontSize: '0.875rem',
-            lineHeight: '1.25rem',
-        },
-        lg: {
-            fontSize: '1.125rem',
-            lineHeight: '1.75rem',
-        },
-        xl: {
-            fontSize: '1.25rem',
-            lineHeight: '1.75rem',
-        },
-        '2xl': {
-            fontSize: '1.5rem',
-            lineHeight: '2rem',
-        },
-        '3xl': {
-            fontSize: '1.875rem',
-            lineHeight: '2.25rem',
-        },
-        '4xl': {
-            fontSize: '2.25rem',
-            lineHeight: '2.5rem',
-        },
-        '5xl': {
-            fontSize: '3rem',
-            lineHeight: '1',
-        },
+        xs: { fontSize: '1rem', lineHeight: '1.25rem' }, // 14px
+        sm: { fontSize: '1.125rem', lineHeight: '1.5rem' }, // 16px
+        lg: { fontSize: '1.25rem', lineHeight: '1.75rem' }, // 18px
+        xl: { fontSize: '1.25rem', lineHeight: '1.75rem' }, // 20px
+        '2xl': { fontSize: '1.875rem', lineHeight: '2rem' }, // 24px
+        '3xl': { fontSize: '2.25rem', lineHeight: '2.25rem' }, // 30px
+        '4xl': { fontSize: '3rem', lineHeight: '2.5rem' }, // 36px
+        '5xl': { fontSize: '3.5rem', lineHeight: '1' },
     },
     customFontWeight: {
         thin: 100,

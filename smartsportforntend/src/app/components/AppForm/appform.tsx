@@ -5,9 +5,21 @@ import FormInput from 'app/components/FormInput/formInput';
 const AppForm = (props: Props) => {
     return (
         <form onSubmit={props.handleSubmit}>
-            <FormInput type='email' name='email' value={props.values.email} onChange={props.handleChange} onBlur={props.handleBlur} />
+            <FormInput
+                type="email"
+                name="email"
+                value={props.values.email}
+                onChange={props.handleChange}
+                onBlur={props.handleBlur}
+            />
             {props.touched.email && props.errors.email}
-            <FormInput type='password' name='password' value={props.values.password} onChange={props.handleChange} onBlur={props.handleBlur} />
+            <FormInput
+                type="password"
+                name="password"
+                value={props.values.password}
+                onChange={props.handleChange}
+                onBlur={props.handleBlur}
+            />
             {props.touched.password && props.errors.password}
             <FormBtn
                 id="SignUpBtn"

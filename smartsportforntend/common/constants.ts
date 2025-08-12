@@ -1,4 +1,5 @@
 export const API_URL = 'http://127.0.0.1:8000';
+import { theme } from 'theme';
 import * as Yup from 'yup';
 
 export const validationSchema = Yup.object().shape({

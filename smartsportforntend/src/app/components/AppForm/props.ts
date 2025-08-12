@@ -1,6 +1,6 @@
-import { FormikTouched } from "formik";
+import { FormikTouched } from 'formik';
 
-export type Props ={
+export type Props = {
     handleSubmit: () => void;
     handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleBlur: (e: React.FocusEvent<HTMLInputElement>) => void;
@@ -16,5 +16,5 @@ export type Props ={
     touched: FormikTouched<{
         email: string;
         password: string;
-    }>
-}
+    }>;
+};

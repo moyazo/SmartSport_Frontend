@@ -2,11 +2,11 @@ import { ClientProviders } from './components/ClientProviders';
 import { metadata } from './metadata';
 import React from 'react';
 export { metadata };
-import { News_Cycle } from 'next/font/google';
+import { Roboto_Condensed } from 'next/font/google';
 
-export const newsCycle = News_Cycle({
-    variable: '--font-news-cycle',
-    weight: ['400', '700'],
+export const robotoCondensed = Roboto_Condensed({
+    variable: '--font-roboto-condensed',
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // rango completo
     subsets: ['latin'],
 });
 
@@ -16,8 +16,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
-            <body className={`${newsCycle.variable} font-newsCycle`}>
+        <html lang="en" className="min-h-screen">
+            <body
+                className={`${robotoCondensed.variable} font-robotoCondensed min-h-screen`}>
                 <ClientProviders>{children}</ClientProviders>
             </body>
         </html>
