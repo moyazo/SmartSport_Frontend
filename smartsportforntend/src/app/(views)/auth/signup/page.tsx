@@ -49,7 +49,15 @@ const SignUp = () => (
                 isSubmitting,
                 /* and other goodies */
             }) => (
-                <AppForm touched={touched} handleSubmit={handleSubmit} handleChange={handleChange} handleBlur={handleBlur} values={values} isSubmitting={isSubmitting} errors={errors} />
+                <AppForm
+                    touched={touched}
+                    handleSubmit={handleSubmit}
+                    handleChange={handleChange}
+                    handleBlur={handleBlur}
+                    values={values}
+                    isSubmitting={isSubmitting}
+                    errors={errors}
+                />
             )}
         </Formik>
     </div>

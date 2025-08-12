@@ -105,7 +105,7 @@ const config: Config = {
                 custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
             },
             fontFamily: {
-                newsCycle: ['var(--font-news-cycle)', 'sans-serif'],
+                newsCycle: ['var(--font-roboto-condensed)', 'sans-serif'],
             },
         },
     },
